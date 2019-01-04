@@ -37,7 +37,7 @@ namespace ScriptGeneration.Domain
         {
             string templateString = string.Empty;
 
-            string filePath = $"..\\..\\..\\ScriptGenerator\\Resource\\{fileName}";
+            string filePath = $".\\Resource\\{fileName}";
             string fullPath = Path.GetFullPath(filePath);
 
             using (var streamReader = new StreamReader(File.OpenRead(fullPath)))
