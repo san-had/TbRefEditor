@@ -102,7 +102,7 @@ namespace TbRefEditor
             {
                 if (selectedTextBox.Name == textBoxes[i].Name)
                 {
-                    textBoxes[i].BackColor = Color.NavajoWhite;
+                    textBoxes[i].BackColor = Color.FromArgb(255, 255, 221);
                 }
                 else
                 {
