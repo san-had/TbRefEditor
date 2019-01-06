@@ -27,25 +27,26 @@ namespace ScriptGeneratorTest.Domain
 
             var inputDto = new InputDto();
             inputDto.PreachDate = new DateTime(2019, 1, 1);
+            inputDto.Lecture = "1Jn 3:1-12";
             inputDto.Textus = "Jer 29:1-14";
             inputDto.Title = "Az igazi keresztyén életedet";
             inputDto.Preacher = "Kis Gergely Márton";
 
             var scriptDto = scriptGenerator.ScriptGeneration(inputDto);
 
-            int expectedReadingLongCharNumber = 166;
+            int expectedReadingLongCharNumber = 182;
             int actualReadingLongCharNumber = scriptDto.ReadingLong.Length;
             Assert.AreEqual(expectedReadingLongCharNumber, actualReadingLongCharNumber);
 
-            int expectedReadingShortCharNumber = 105;
+            int expectedReadingShortCharNumber = 117;
             int actualReadingShortCharNumber = scriptDto.ReadingShort.Length;
             Assert.AreEqual(expectedReadingShortCharNumber, actualReadingShortCharNumber);
 
-            int expectedListeningLongCharNumber = 160;
+            int expectedListeningLongCharNumber = 176;
             int actualListeningLongCharNumber = scriptDto.ListeningLong.Length;
             Assert.AreEqual(expectedListeningLongCharNumber, actualListeningLongCharNumber);
 
-            int expectedListeningShortCharNumber = 99;
+            int expectedListeningShortCharNumber = 111;
             int actualListeningShortCharNumber = scriptDto.ListeningShort.Length;
             Assert.AreEqual(expectedListeningShortCharNumber, actualListeningShortCharNumber);
         }

@@ -34,6 +34,7 @@ namespace ScriptGeneration.Domain
             scriptDto.ReadingLong = string.Format(
                 templateDto.ReadingLongTemplate,
                 inputDto.PreachDate.ToString("yyyy.MM.dd"),
+                inputDto.Lecture,
                 inputDto.Textus,
                 inputDto.FileName,
                 inputDto.Title,
@@ -45,6 +46,7 @@ namespace ScriptGeneration.Domain
             scriptDto.ReadingShort = string.Format(
                 templateDto.ReadingShortTemplate,
                 inputDto.Title,
+                inputDto.Lecture,
                 inputDto.Textus,
                 inputDto.FileName,
                 inputDto.PreachDate.Day.ToString());
@@ -55,6 +57,7 @@ namespace ScriptGeneration.Domain
             scriptDto.ListeningLong = string.Format(
                 templateDto.ListeningLongTemplate,
                 inputDto.PreachDate.ToString("yyyy.MM.dd"),
+                inputDto.Lecture,
                 inputDto.Textus,
                 inputDto.FileName,
                 inputDto.Title,
@@ -66,6 +69,7 @@ namespace ScriptGeneration.Domain
             scriptDto.ListeningShort = string.Format(
                 templateDto.ListeningShortTemplate,
                 inputDto.Title,
+                inputDto.Lecture,
                 inputDto.Textus,
                 inputDto.FileName,
                 inputDto.PreachDate.Day.ToString());

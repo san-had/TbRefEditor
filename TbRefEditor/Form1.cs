@@ -38,8 +38,6 @@ namespace TbRefEditor
         {
             txtPreacher.Text = ConfigurationManager.AppSettings["preacher"];
             txtTitle.Text = ConfigurationManager.AppSettings["title"];
-            txtBibel.Text = "n.a.";
-            txtBibel.Enabled = false;
 
             lblReadingLong.Text = ConfigurationManager.AppSettings["lblReadingLong"];
             lblReadingShort.Text = ConfigurationManager.AppSettings["lblReadingShort"];
@@ -51,8 +49,8 @@ namespace TbRefEditor
         {
             var inputDto = new InputDto();
             inputDto.PreachDate = dpPreachDate.Value;
-            inputDto.Lecture = txtBibel.Text;
-            inputDto.Textus = txtTextus.Text;
+            inputDto.Lecture = txtBibel.Text.Replace(',', ':');
+            inputDto.Textus = txtTextus.Text.Replace(',', ':');
             inputDto.Title = txtTitle.Text;
             inputDto.Preacher = txtPreacher.Text;
             return inputDto;
