@@ -1,29 +1,18 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ninject;
-using ScriptGeneration.Domain;
 using ScriptGeneration.Dto;
 using ScriptGeneration.Extensibility;
 
 namespace ScriptGeneratorTest.Domain
 {
     [TestClass]
-    public class ScriptGeneratorTest
+    public class ScriptGeneratorTest : TestBase
     {
-        private static IKernel kernel;
-
-        [ClassInitialize]
-        public static void OneTimeSetup(TestContext testContext)
-        {
-            kernel = new StandardKernel();
-            kernel.Bind<ITemplateRetriever>().To<TemplateRetriever>();
-            kernel.Bind<IScriptGenerator>().To<ScriptGenerator>();
-        }
-
         [TestMethod]
         public void CheckProperScriptGeneration()
         {
-            var scriptGenerator = kernel.Get<IScriptGenerator>();
+            var scriptGenerator = Kernel.Get<IScriptGenerator>();
 
             var inputDto = new InputDto();
             inputDto.PreachDate = new DateTime(2019, 1, 1);
@@ -49,12 +38,6 @@ namespace ScriptGeneratorTest.Domain
             int expectedListeningShortCharNumber = 111;
             int actualListeningShortCharNumber = scriptDto.ListeningShort.Length;
             Assert.AreEqual(expectedListeningShortCharNumber, actualListeningShortCharNumber);
-        }
-
-        [ClassCleanup]
-        public static void CleanUp()
-        {
-            kernel.Dispose();
         }
     }
 }

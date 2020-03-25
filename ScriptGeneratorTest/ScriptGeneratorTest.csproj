@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Domain\ScriptGeneratorTest.cs" />
     <Compile Include="Domain\TemplateRetrieverTest.cs" />
+    <Compile Include="Domain\TestBase.cs" />
     <Compile Include="Dto\InputDtoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

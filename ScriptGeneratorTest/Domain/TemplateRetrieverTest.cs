@@ -1,15 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ScriptGeneration.Domain;
+using Ninject;
+using ScriptGeneration.Extensibility;
 
 namespace ScriptGeneratorTest.Domain
 {
     [TestClass]
-    public class TemplateRetrieverTest
+    public class TemplateRetrieverTest : TestBase
     {
         [TestMethod]
         public void CheckProperTemplate()
         {
-            var templateRetriever = new TemplateRetriever();
+            var templateRetriever = Kernel.Get<ITemplateRetriever>();
             var templateDto = templateRetriever.ReadingTemplates();
 
             int expectedReadingLongTemplateCharNumber = 115;
