@@ -14,7 +14,7 @@ namespace ScriptGeneratorTest.Domain
             Kernel.Load<ScriptGeneratorNinjectModule>();
         }
 
-        protected IKernel Kernel { get; set; }
+        protected IKernel Kernel { get; private set; }
 
         public void Dispose()
         {
