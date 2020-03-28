@@ -21,5 +21,7 @@ namespace ScriptGeneration.Dto
                 return string.Format("{0}{1:00}{2:00}", PreachDate.Year, PreachDate.Month, PreachDate.Day);
             }
         }
+
+        public string Youtube { get; set; }
     }
 }

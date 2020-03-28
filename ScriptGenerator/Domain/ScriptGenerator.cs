@@ -22,9 +22,9 @@ namespace ScriptGeneration.Domain
 
             ReadingShortGeneration(inputDto, templateDto, scriptDto);
 
-            ListeningLongGeneration(inputDto, templateDto, scriptDto);
+            YoutubeLongGeneration(inputDto, templateDto, scriptDto);
 
-            ListeningShortGeneration(inputDto, templateDto, scriptDto);
+            YoutubeShortGeneration(inputDto, templateDto, scriptDto);
 
             return scriptDto;
         }
@@ -52,26 +52,26 @@ namespace ScriptGeneration.Domain
                 inputDto.PreachDate.Day.ToString());
         }
 
-        public void ListeningLongGeneration(InputDto inputDto, TemplateDto templateDto, ScriptDto scriptDto)
+        public void YoutubeLongGeneration(InputDto inputDto, TemplateDto templateDto, ScriptDto scriptDto)
         {
-            scriptDto.ListeningLong = string.Format(
-                templateDto.ListeningLongTemplate,
+            scriptDto.YoutubeLong = string.Format(
+                templateDto.YoutubeLongTemplate,
                 inputDto.PreachDate.ToString("yyyy.MM.dd"),
                 inputDto.Lecture,
                 inputDto.Textus,
-                inputDto.FileName,
+                inputDto.Youtube,
                 inputDto.Title,
                 inputDto.Preacher);
         }
 
-        public void ListeningShortGeneration(InputDto inputDto, TemplateDto templateDto, ScriptDto scriptDto)
+        public void YoutubeShortGeneration(InputDto inputDto, TemplateDto templateDto, ScriptDto scriptDto)
         {
-            scriptDto.ListeningShort = string.Format(
-                templateDto.ListeningShortTemplate,
+            scriptDto.YoutubeShort = string.Format(
+                templateDto.YoutubeShortTemplate,
                 inputDto.Title,
                 inputDto.Lecture,
                 inputDto.Textus,
-                inputDto.FileName,
+                inputDto.Youtube,
                 inputDto.PreachDate.Day.ToString());
         }
     }

@@ -6,8 +6,8 @@
 
         public string ReadingShort { get; set; }
 
-        public string ListeningLong { get; set; }
+        public string YoutubeLong { get; set; }
 
-        public string ListeningShort { get; set; }
+        public string YoutubeShort { get; set; }
     }
 }

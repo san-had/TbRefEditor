@@ -8,8 +8,8 @@ namespace ScriptGeneration.Domain
     {
         private const string ReadingLong = "ReadingLong.txt";
         private const string ReadingShort = "ReadingShort.txt";
-        private const string ListeningLong = "ListeningLong.txt";
-        private const string ListeningShort = "ListeningShort.txt";
+        private const string YoutubeLong = "YoutubeLong.txt";
+        private const string YoutubeShort = "YoutubeShort.txt";
 
         public TemplateDto ReadingTemplates()
         {
@@ -17,8 +17,8 @@ namespace ScriptGeneration.Domain
             {
                 ReadingLong,
                 ReadingShort,
-                ListeningLong,
-                ListeningShort
+                YoutubeLong,
+                YoutubeShort
             };
 
             var templateDto = new TemplateDto();

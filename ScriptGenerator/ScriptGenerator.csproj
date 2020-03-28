@@ -58,10 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resource\ListeningLong.txt">
+    <Content Include="Resource\YoutubeLong.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resource\ListeningShort.txt">
+    <Content Include="Resource\YoutubeShort.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resource\ReadingLong.txt">

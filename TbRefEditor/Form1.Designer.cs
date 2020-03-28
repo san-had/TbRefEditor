@@ -43,113 +43,127 @@
             this.btnCopyReadingShort = new System.Windows.Forms.Button();
             this.lblReadingShort = new System.Windows.Forms.Label();
             this.txtReadingShort = new System.Windows.Forms.TextBox();
-            this.btnCopyListenShort = new System.Windows.Forms.Button();
-            this.lblListeningShort = new System.Windows.Forms.Label();
-            this.txtListenShort = new System.Windows.Forms.TextBox();
-            this.btnCopyListenLong = new System.Windows.Forms.Button();
-            this.lblListeningLong = new System.Windows.Forms.Label();
-            this.txtListenLong = new System.Windows.Forms.TextBox();
+            this.btnCopyWatchShort = new System.Windows.Forms.Button();
+            this.lblYoutubeShort = new System.Windows.Forms.Label();
+            this.txtYoutubeShort = new System.Windows.Forms.TextBox();
+            this.btnCopyYoutubeLong = new System.Windows.Forms.Button();
+            this.lblYoutubeLong = new System.Windows.Forms.Label();
+            this.txtYoutubeLong = new System.Windows.Forms.TextBox();
             this.btnGenerateScript = new System.Windows.Forms.Button();
             this.dpPreachDate = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtYoutube = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtBibel
             // 
-            this.txtBibel.Location = new System.Drawing.Point(138, 88);
+            this.txtBibel.Location = new System.Drawing.Point(104, 72);
+            this.txtBibel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBibel.Name = "txtBibel";
-            this.txtBibel.Size = new System.Drawing.Size(206, 22);
+            this.txtBibel.Size = new System.Drawing.Size(156, 20);
             this.txtBibel.TabIndex = 1;
             // 
             // txtTextus
             // 
-            this.txtTextus.Location = new System.Drawing.Point(138, 144);
+            this.txtTextus.Location = new System.Drawing.Point(104, 117);
+            this.txtTextus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTextus.Name = "txtTextus";
-            this.txtTextus.Size = new System.Drawing.Size(206, 22);
+            this.txtTextus.Size = new System.Drawing.Size(156, 20);
             this.txtTextus.TabIndex = 2;
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(138, 200);
+            this.txtTitle.Location = new System.Drawing.Point(104, 162);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(206, 22);
+            this.txtTitle.Size = new System.Drawing.Size(156, 20);
             this.txtTitle.TabIndex = 3;
             // 
             // txtPreacher
             // 
-            this.txtPreacher.Location = new System.Drawing.Point(138, 253);
+            this.txtPreacher.Location = new System.Drawing.Point(104, 206);
+            this.txtPreacher.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPreacher.Name = "txtPreacher";
-            this.txtPreacher.Size = new System.Drawing.Size(206, 22);
+            this.txtPreacher.Size = new System.Drawing.Size(156, 20);
             this.txtPreacher.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 40);
+            this.label1.Location = new System.Drawing.Point(25, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Dátum:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 93);
+            this.label2.Location = new System.Drawing.Point(25, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Bibliaolvasás:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 149);
+            this.label3.Location = new System.Drawing.Point(25, 121);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 17);
+            this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Textus:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 205);
+            this.label4.Location = new System.Drawing.Point(25, 167);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 17);
+            this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Cím: ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 258);
+            this.label5.Location = new System.Drawing.Point(25, 210);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 17);
+            this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Igehirdető:";
             // 
             // txtReadingLong
             // 
-            this.txtReadingLong.Location = new System.Drawing.Point(676, 25);
+            this.txtReadingLong.Location = new System.Drawing.Point(507, 20);
+            this.txtReadingLong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReadingLong.Multiline = true;
             this.txtReadingLong.Name = "txtReadingLong";
             this.txtReadingLong.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReadingLong.Size = new System.Drawing.Size(396, 141);
+            this.txtReadingLong.Size = new System.Drawing.Size(298, 115);
             this.txtReadingLong.TabIndex = 10;
             // 
             // lblReadingLong
             // 
             this.lblReadingLong.AutoSize = true;
             this.lblReadingLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReadingLong.Location = new System.Drawing.Point(433, 28);
+            this.lblReadingLong.Location = new System.Drawing.Point(325, 23);
+            this.lblReadingLong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReadingLong.Name = "lblReadingLong";
-            this.lblReadingLong.Size = new System.Drawing.Size(227, 17);
+            this.lblReadingLong.Size = new System.Drawing.Size(178, 13);
             this.lblReadingLong.TabIndex = 11;
-            this.lblReadingLong.Text = "Igehirdetések olvasása - 2019";
+            this.lblReadingLong.Text = "Igehirdetések olvasása - 2020";
             // 
             // btnCopyReadingLong
             // 
-            this.btnCopyReadingLong.Location = new System.Drawing.Point(442, 73);
+            this.btnCopyReadingLong.Location = new System.Drawing.Point(332, 59);
+            this.btnCopyReadingLong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCopyReadingLong.Name = "btnCopyReadingLong";
-            this.btnCopyReadingLong.Size = new System.Drawing.Size(95, 37);
+            this.btnCopyReadingLong.Size = new System.Drawing.Size(71, 30);
             this.btnCopyReadingLong.TabIndex = 12;
             this.btnCopyReadingLong.Text = "Másol";
             this.btnCopyReadingLong.UseVisualStyleBackColor = true;
@@ -157,9 +171,10 @@
             // 
             // btnCopyReadingShort
             // 
-            this.btnCopyReadingShort.Location = new System.Drawing.Point(442, 253);
+            this.btnCopyReadingShort.Location = new System.Drawing.Point(332, 206);
+            this.btnCopyReadingShort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCopyReadingShort.Name = "btnCopyReadingShort";
-            this.btnCopyReadingShort.Size = new System.Drawing.Size(95, 37);
+            this.btnCopyReadingShort.Size = new System.Drawing.Size(71, 30);
             this.btnCopyReadingShort.TabIndex = 15;
             this.btnCopyReadingShort.Text = "Másol";
             this.btnCopyReadingShort.UseVisualStyleBackColor = true;
@@ -169,86 +184,95 @@
             // 
             this.lblReadingShort.AutoSize = true;
             this.lblReadingShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReadingShort.Location = new System.Drawing.Point(433, 208);
+            this.lblReadingShort.Location = new System.Drawing.Point(325, 169);
+            this.lblReadingShort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReadingShort.Name = "lblReadingShort";
-            this.lblReadingShort.Size = new System.Drawing.Size(175, 17);
+            this.lblReadingShort.Size = new System.Drawing.Size(138, 13);
             this.lblReadingShort.TabIndex = 14;
             this.lblReadingShort.Text = "Igehirdetések olvasása";
             // 
             // txtReadingShort
             // 
-            this.txtReadingShort.Location = new System.Drawing.Point(676, 202);
+            this.txtReadingShort.Location = new System.Drawing.Point(507, 164);
+            this.txtReadingShort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtReadingShort.Multiline = true;
             this.txtReadingShort.Name = "txtReadingShort";
             this.txtReadingShort.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReadingShort.Size = new System.Drawing.Size(396, 70);
+            this.txtReadingShort.Size = new System.Drawing.Size(298, 58);
             this.txtReadingShort.TabIndex = 13;
             // 
-            // btnCopyListenShort
+            // btnCopyWatchShort
             // 
-            this.btnCopyListenShort.Location = new System.Drawing.Point(442, 591);
-            this.btnCopyListenShort.Name = "btnCopyListenShort";
-            this.btnCopyListenShort.Size = new System.Drawing.Size(95, 37);
-            this.btnCopyListenShort.TabIndex = 21;
-            this.btnCopyListenShort.Text = "Másol";
-            this.btnCopyListenShort.UseVisualStyleBackColor = true;
-            this.btnCopyListenShort.Click += new System.EventHandler(this.btnCopyListenShort_Click);
+            this.btnCopyWatchShort.Location = new System.Drawing.Point(332, 480);
+            this.btnCopyWatchShort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCopyWatchShort.Name = "btnCopyWatchShort";
+            this.btnCopyWatchShort.Size = new System.Drawing.Size(71, 30);
+            this.btnCopyWatchShort.TabIndex = 21;
+            this.btnCopyWatchShort.Text = "Másol";
+            this.btnCopyWatchShort.UseVisualStyleBackColor = true;
+            this.btnCopyWatchShort.Click += new System.EventHandler(this.btnCopyYoutubeShort_Click);
             // 
-            // lblListeningShort
+            // lblYoutubeShort
             // 
-            this.lblListeningShort.AutoSize = true;
-            this.lblListeningShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListeningShort.Location = new System.Drawing.Point(433, 546);
-            this.lblListeningShort.Name = "lblListeningShort";
-            this.lblListeningShort.Size = new System.Drawing.Size(227, 17);
-            this.lblListeningShort.TabIndex = 20;
-            this.lblListeningShort.Text = "Istentiszteletek meghallgatása";
+            this.lblYoutubeShort.AutoSize = true;
+            this.lblYoutubeShort.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYoutubeShort.Location = new System.Drawing.Point(325, 444);
+            this.lblYoutubeShort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblYoutubeShort.Name = "lblYoutubeShort";
+            this.lblYoutubeShort.Size = new System.Drawing.Size(172, 13);
+            this.lblYoutubeShort.TabIndex = 20;
+            this.lblYoutubeShort.Text = "Istentiszteletek megtekintése";
             // 
-            // txtListenShort
+            // txtYoutubeShort
             // 
-            this.txtListenShort.Location = new System.Drawing.Point(676, 546);
-            this.txtListenShort.Multiline = true;
-            this.txtListenShort.Name = "txtListenShort";
-            this.txtListenShort.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtListenShort.Size = new System.Drawing.Size(396, 70);
-            this.txtListenShort.TabIndex = 19;
+            this.txtYoutubeShort.Location = new System.Drawing.Point(507, 444);
+            this.txtYoutubeShort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtYoutubeShort.Multiline = true;
+            this.txtYoutubeShort.Name = "txtYoutubeShort";
+            this.txtYoutubeShort.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtYoutubeShort.Size = new System.Drawing.Size(298, 58);
+            this.txtYoutubeShort.TabIndex = 19;
             // 
-            // btnCopyListenLong
+            // btnCopyYoutubeLong
             // 
-            this.btnCopyListenLong.Location = new System.Drawing.Point(442, 411);
-            this.btnCopyListenLong.Name = "btnCopyListenLong";
-            this.btnCopyListenLong.Size = new System.Drawing.Size(95, 37);
-            this.btnCopyListenLong.TabIndex = 18;
-            this.btnCopyListenLong.Text = "Másol";
-            this.btnCopyListenLong.UseVisualStyleBackColor = true;
-            this.btnCopyListenLong.Click += new System.EventHandler(this.btnCopyListenLong_Click);
+            this.btnCopyYoutubeLong.Location = new System.Drawing.Point(332, 334);
+            this.btnCopyYoutubeLong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCopyYoutubeLong.Name = "btnCopyYoutubeLong";
+            this.btnCopyYoutubeLong.Size = new System.Drawing.Size(71, 30);
+            this.btnCopyYoutubeLong.TabIndex = 18;
+            this.btnCopyYoutubeLong.Text = "Másol";
+            this.btnCopyYoutubeLong.UseVisualStyleBackColor = true;
+            this.btnCopyYoutubeLong.Click += new System.EventHandler(this.btnCopyYoutubeLong_Click);
             // 
-            // lblListeningLong
+            // lblYoutubeLong
             // 
-            this.lblListeningLong.AutoSize = true;
-            this.lblListeningLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListeningLong.Location = new System.Drawing.Point(433, 366);
-            this.lblListeningLong.Name = "lblListeningLong";
-            this.lblListeningLong.Size = new System.Drawing.Size(169, 17);
-            this.lblListeningLong.TabIndex = 17;
-            this.lblListeningLong.Text = "Istentiszteletek - 2019";
+            this.lblYoutubeLong.AutoSize = true;
+            this.lblYoutubeLong.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYoutubeLong.Location = new System.Drawing.Point(325, 297);
+            this.lblYoutubeLong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblYoutubeLong.Name = "lblYoutubeLong";
+            this.lblYoutubeLong.Size = new System.Drawing.Size(171, 13);
+            this.lblYoutubeLong.TabIndex = 17;
+            this.lblYoutubeLong.Text = "Istentiszteletek megtk - 2020";
             // 
-            // txtListenLong
+            // txtYoutubeLong
             // 
-            this.txtListenLong.Location = new System.Drawing.Point(676, 363);
-            this.txtListenLong.Multiline = true;
-            this.txtListenLong.Name = "txtListenLong";
-            this.txtListenLong.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtListenLong.Size = new System.Drawing.Size(396, 141);
-            this.txtListenLong.TabIndex = 16;
+            this.txtYoutubeLong.Location = new System.Drawing.Point(507, 295);
+            this.txtYoutubeLong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtYoutubeLong.Multiline = true;
+            this.txtYoutubeLong.Name = "txtYoutubeLong";
+            this.txtYoutubeLong.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtYoutubeLong.Size = new System.Drawing.Size(298, 115);
+            this.txtYoutubeLong.TabIndex = 16;
             // 
             // btnGenerateScript
             // 
             this.btnGenerateScript.BackColor = System.Drawing.Color.Cornsilk;
             this.btnGenerateScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerateScript.Location = new System.Drawing.Point(138, 411);
+            this.btnGenerateScript.Location = new System.Drawing.Point(104, 334);
+            this.btnGenerateScript.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGenerateScript.Name = "btnGenerateScript";
-            this.btnGenerateScript.Size = new System.Drawing.Size(206, 46);
+            this.btnGenerateScript.Size = new System.Drawing.Size(154, 37);
             this.btnGenerateScript.TabIndex = 22;
             this.btnGenerateScript.Text = "Script generál";
             this.btnGenerateScript.UseVisualStyleBackColor = false;
@@ -258,24 +282,45 @@
             // 
             this.dpPreachDate.CustomFormat = "yyyy. MMMM. dd";
             this.dpPreachDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpPreachDate.Location = new System.Drawing.Point(138, 40);
+            this.dpPreachDate.Location = new System.Drawing.Point(104, 32);
+            this.dpPreachDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dpPreachDate.Name = "dpPreachDate";
-            this.dpPreachDate.Size = new System.Drawing.Size(206, 22);
+            this.dpPreachDate.Size = new System.Drawing.Size(156, 20);
             this.dpPreachDate.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(25, 259);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Youtube:";
+            // 
+            // txtYoutube
+            // 
+            this.txtYoutube.Location = new System.Drawing.Point(104, 255);
+            this.txtYoutube.Margin = new System.Windows.Forms.Padding(2);
+            this.txtYoutube.Name = "txtYoutube";
+            this.txtYoutube.Size = new System.Drawing.Size(156, 20);
+            this.txtYoutube.TabIndex = 24;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 720);
+            this.ClientSize = new System.Drawing.Size(878, 585);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtYoutube);
             this.Controls.Add(this.dpPreachDate);
             this.Controls.Add(this.btnGenerateScript);
-            this.Controls.Add(this.btnCopyListenShort);
-            this.Controls.Add(this.lblListeningShort);
-            this.Controls.Add(this.txtListenShort);
-            this.Controls.Add(this.btnCopyListenLong);
-            this.Controls.Add(this.lblListeningLong);
-            this.Controls.Add(this.txtListenLong);
+            this.Controls.Add(this.btnCopyWatchShort);
+            this.Controls.Add(this.lblYoutubeShort);
+            this.Controls.Add(this.txtYoutubeShort);
+            this.Controls.Add(this.btnCopyYoutubeLong);
+            this.Controls.Add(this.lblYoutubeLong);
+            this.Controls.Add(this.txtYoutubeLong);
             this.Controls.Add(this.btnCopyReadingShort);
             this.Controls.Add(this.lblReadingShort);
             this.Controls.Add(this.txtReadingShort);
@@ -291,6 +336,7 @@
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.txtTextus);
             this.Controls.Add(this.txtBibel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "TbRefEditor";
             this.ResumeLayout(false);
@@ -314,14 +360,16 @@
         private System.Windows.Forms.Button btnCopyReadingShort;
         private System.Windows.Forms.Label lblReadingShort;
         private System.Windows.Forms.TextBox txtReadingShort;
-        private System.Windows.Forms.Button btnCopyListenShort;
-        private System.Windows.Forms.Label lblListeningShort;
-        private System.Windows.Forms.TextBox txtListenShort;
-        private System.Windows.Forms.Button btnCopyListenLong;
-        private System.Windows.Forms.Label lblListeningLong;
-        private System.Windows.Forms.TextBox txtListenLong;
+        private System.Windows.Forms.Button btnCopyWatchShort;
+        private System.Windows.Forms.Label lblYoutubeShort;
+        private System.Windows.Forms.TextBox txtYoutubeShort;
+        private System.Windows.Forms.Button btnCopyYoutubeLong;
+        private System.Windows.Forms.Label lblYoutubeLong;
+        private System.Windows.Forms.TextBox txtYoutubeLong;
         private System.Windows.Forms.Button btnGenerateScript;
         private System.Windows.Forms.DateTimePicker dpPreachDate;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtYoutube;
     }
 }
 

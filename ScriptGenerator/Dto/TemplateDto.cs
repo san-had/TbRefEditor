@@ -6,8 +6,8 @@
 
         public string ReadingShortTemplate { get; set; }
 
-        public string ListeningLongTemplate { get; set; }
+        public string YoutubeLongTemplate { get; set; }
 
-        public string ListeningShortTemplate { get; set; }
+        public string YoutubeShortTemplate { get; set; }
     }
 }

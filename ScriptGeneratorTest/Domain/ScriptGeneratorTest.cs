@@ -31,12 +31,12 @@ namespace ScriptGeneratorTest.Domain
             int actualReadingShortCharNumber = scriptDto.ReadingShort.Length;
             Assert.AreEqual(expectedReadingShortCharNumber, actualReadingShortCharNumber);
 
-            int expectedListeningLongCharNumber = 176;
-            int actualListeningLongCharNumber = scriptDto.ListeningLong.Length;
+            int expectedListeningLongCharNumber = 168;
+            int actualListeningLongCharNumber = scriptDto.YoutubeLong.Length;
             Assert.AreEqual(expectedListeningLongCharNumber, actualListeningLongCharNumber);
 
-            int expectedListeningShortCharNumber = 111;
-            int actualListeningShortCharNumber = scriptDto.ListeningShort.Length;
+            int expectedListeningShortCharNumber = 103;
+            int actualListeningShortCharNumber = scriptDto.YoutubeShort.Length;
             Assert.AreEqual(expectedListeningShortCharNumber, actualListeningShortCharNumber);
         }
     }

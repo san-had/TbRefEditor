@@ -22,11 +22,11 @@ namespace ScriptGeneratorTest.Domain
             Assert.AreEqual(expectedReadingShortTemplateCharNumber, actualReadingShortTemplateCharNumber);
 
             int expectedListeningLongTemplateCharNumber = 109;
-            int actualListeningLongTemplateCharNumber = templateDto.ListeningLongTemplate.Length;
+            int actualListeningLongTemplateCharNumber = templateDto.YoutubeLongTemplate.Length;
             Assert.AreEqual(expectedListeningLongTemplateCharNumber, actualListeningLongTemplateCharNumber);
 
             int expectedListeningShortTemplateCharNumber = 68;
-            int actualListeningShortTemplateCharNumber = templateDto.ListeningShortTemplate.Length;
+            int actualListeningShortTemplateCharNumber = templateDto.YoutubeShortTemplate.Length;
             Assert.AreEqual(expectedListeningShortTemplateCharNumber, actualListeningShortTemplateCharNumber);
         }
     }

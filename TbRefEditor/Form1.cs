@@ -29,8 +29,8 @@ namespace TbRefEditor
             {
                 txtReadingLong,
                 txtReadingShort,
-                txtListenLong,
-                txtListenShort
+                txtYoutubeLong,
+                txtYoutubeShort
             };
         }
 
@@ -41,8 +41,8 @@ namespace TbRefEditor
 
             lblReadingLong.Text = ConfigurationManager.AppSettings["lblReadingLong"];
             lblReadingShort.Text = ConfigurationManager.AppSettings["lblReadingShort"];
-            lblListeningLong.Text = ConfigurationManager.AppSettings["lblListeningLong"];
-            lblListeningShort.Text = ConfigurationManager.AppSettings["lblListeningShort"];
+            lblYoutubeLong.Text = ConfigurationManager.AppSettings["lblListeningLong"];
+            lblYoutubeShort.Text = ConfigurationManager.AppSettings["lblListeningShort"];
         }
 
         private InputDto LoadInputs()
@@ -53,6 +53,7 @@ namespace TbRefEditor
             inputDto.Textus = txtTextus.Text.Replace(',', ':');
             inputDto.Title = txtTitle.Text;
             inputDto.Preacher = txtPreacher.Text;
+            inputDto.Youtube = txtYoutube.Text;
             return inputDto;
         }
 
@@ -65,8 +66,8 @@ namespace TbRefEditor
             txtReadingLong.Text = scriptDto.ReadingLong;
             txtReadingShort.Text = scriptDto.ReadingShort;
 
-            txtListenLong.Text = scriptDto.ListeningLong;
-            txtListenShort.Text = scriptDto.ListeningShort;
+            txtYoutubeLong.Text = scriptDto.YoutubeLong;
+            txtYoutubeShort.Text = scriptDto.YoutubeShort;
         }
 
         private void btnCopyReadingLong_Click(object sender, System.EventArgs e)
@@ -77,16 +78,6 @@ namespace TbRefEditor
         private void btnCopyReadingShort_Click(object sender, System.EventArgs e)
         {
             TextBoxHandling(txtReadingShort);
-        }
-
-        private void btnCopyListenLong_Click(object sender, System.EventArgs e)
-        {
-            TextBoxHandling(txtListenLong);
-        }
-
-        private void btnCopyListenShort_Click(object sender, System.EventArgs e)
-        {
-            TextBoxHandling(txtListenShort);
         }
 
         private void TextBoxHandling(TextBox textBox)
@@ -109,6 +100,16 @@ namespace TbRefEditor
                     textBoxes[i].BackColor = Color.White;
                 }
             }
+        }
+
+        private void btnCopyYoutubeLong_Click(object sender, System.EventArgs e)
+        {
+            TextBoxHandling(txtYoutubeLong);
+        }
+
+        private void btnCopyYoutubeShort_Click(object sender, System.EventArgs e)
+        {
+            TextBoxHandling(txtYoutubeShort);
         }
     }
 }
